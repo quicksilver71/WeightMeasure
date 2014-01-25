@@ -22,6 +22,7 @@
 		A4C21C4C1892B67300052E8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C21C2B1892B67300052E8C /* UIKit.framework */; };
 		A4C21C541892B67300052E8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4C21C521892B67300052E8C /* InfoPlist.strings */; };
 		A4C21C561892B67300052E8C /* WeightMeasureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C21C551892B67300052E8C /* WeightMeasureTests.m */; };
+		A4C21C611892BA6900052E8C /* ConfigWeightMeasure.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C21C601892BA6900052E8C /* ConfigWeightMeasure.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +48,16 @@
 		A4C21C371892B67300052E8C /* WeightMeasureAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeightMeasureAppDelegate.m; sourceTree = "<group>"; };
 		A4C21C3A1892B67300052E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		A4C21C3D1892B67300052E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		A4C21C3F1892B67300052E8C /* WeightMeasureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeightMeasureViewController.h; sourceTree = "<group>"; };
-		A4C21C401892B67300052E8C /* WeightMeasureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeightMeasureViewController.m; sourceTree = "<group>"; };
+		A4C21C3F1892B67300052E8C /* WeightMeasureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WeightMeasureViewController.h; path = WeightMeasure/WeightMeasureViewController.h; sourceTree = "<group>"; };
+		A4C21C401892B67300052E8C /* WeightMeasureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WeightMeasureViewController.m; path = WeightMeasure/WeightMeasureViewController.m; sourceTree = "<group>"; };
 		A4C21C421892B67300052E8C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A4C21C481892B67300052E8C /* WeightMeasureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeightMeasureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C21C491892B67300052E8C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A4C21C511892B67300052E8C /* WeightMeasureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeightMeasureTests-Info.plist"; sourceTree = "<group>"; };
 		A4C21C531892B67300052E8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A4C21C551892B67300052E8C /* WeightMeasureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeightMeasureTests.m; sourceTree = "<group>"; };
+		A4C21C5F1892BA6900052E8C /* ConfigWeightMeasure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigWeightMeasure.h; sourceTree = "<group>"; };
+		A4C21C601892BA6900052E8C /* ConfigWeightMeasure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigWeightMeasure.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		A4C21C1B1892B67300052E8C = {
 			isa = PBXGroup;
 			children = (
+				A4C21C621892BB0600052E8C /* Control */,
 				A4C21C2D1892B67300052E8C /* WeightMeasure */,
 				A4C21C4F1892B67300052E8C /* WeightMeasureTests */,
 				A4C21C261892B67300052E8C /* Frameworks */,
@@ -118,8 +122,6 @@
 				A4C21C371892B67300052E8C /* WeightMeasureAppDelegate.m */,
 				A4C21C391892B67300052E8C /* Main_iPhone.storyboard */,
 				A4C21C3C1892B67300052E8C /* Main_iPad.storyboard */,
-				A4C21C3F1892B67300052E8C /* WeightMeasureViewController.h */,
-				A4C21C401892B67300052E8C /* WeightMeasureViewController.m */,
 				A4C21C421892B67300052E8C /* Images.xcassets */,
 				A4C21C2E1892B67300052E8C /* Supporting Files */,
 			);
@@ -153,6 +155,17 @@
 				A4C21C521892B67300052E8C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4C21C621892BB0600052E8C /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				A4C21C3F1892B67300052E8C /* WeightMeasureViewController.h */,
+				A4C21C401892B67300052E8C /* WeightMeasureViewController.m */,
+				A4C21C5F1892BA6900052E8C /* ConfigWeightMeasure.h */,
+				A4C21C601892BA6900052E8C /* ConfigWeightMeasure.m */,
+			);
+			name = Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C21C611892BA6900052E8C /* ConfigWeightMeasure.m in Sources */,
 				A4C21C341892B67300052E8C /* main.m in Sources */,
 				A4C21C411892B67300052E8C /* WeightMeasureViewController.m in Sources */,
 				A4C21C381892B67300052E8C /* WeightMeasureAppDelegate.m in Sources */,
@@ -475,6 +489,7 @@
 				A4C21C5B1892B67300052E8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4C21C5C1892B67300052E8C /* Build configuration list for PBXNativeTarget "WeightMeasureTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +498,7 @@
 				A4C21C5E1892B67300052E8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
