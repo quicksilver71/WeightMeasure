@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4575D341897C06400D3103D /* AdvancedConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A4575D331897C06400D3103D /* AdvancedConfig.m */; };
 		A4C21C281892B67300052E8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C21C271892B67300052E8C /* Foundation.framework */; };
 		A4C21C2A1892B67300052E8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C21C291892B67300052E8C /* CoreGraphics.framework */; };
 		A4C21C2C1892B67300052E8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C21C2B1892B67300052E8C /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A4575D321897C06400D3103D /* AdvancedConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedConfig.h; sourceTree = "<group>"; };
+		A4575D331897C06400D3103D /* AdvancedConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedConfig.m; sourceTree = "<group>"; };
 		A4C21C241892B67300052E8C /* WeightMeasure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightMeasure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C21C271892B67300052E8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A4C21C291892B67300052E8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -164,6 +167,8 @@
 				A4C21C401892B67300052E8C /* WeightMeasureViewController.m */,
 				A4C21C5F1892BA6900052E8C /* ConfigWeightMeasure.h */,
 				A4C21C601892BA6900052E8C /* ConfigWeightMeasure.m */,
+				A4575D321897C06400D3103D /* AdvancedConfig.h */,
+				A4575D331897C06400D3103D /* AdvancedConfig.m */,
 			);
 			name = Control;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 			files = (
 				A4C21C611892BA6900052E8C /* ConfigWeightMeasure.m in Sources */,
 				A4C21C341892B67300052E8C /* main.m in Sources */,
+				A4575D341897C06400D3103D /* AdvancedConfig.m in Sources */,
 				A4C21C411892B67300052E8C /* WeightMeasureViewController.m in Sources */,
 				A4C21C381892B67300052E8C /* WeightMeasureAppDelegate.m in Sources */,
 			);
