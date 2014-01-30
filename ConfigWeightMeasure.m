@@ -81,6 +81,9 @@
     if (![sender.text isEqualToString:@""]) {
         self.count++;
     }
+    if (self.count>=2) {
+        self.continua.enabled=YES;
+    }
     
     NSLog(@"count vale: %i",self.count);
 }
